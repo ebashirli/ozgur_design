@@ -1,7 +1,6 @@
 import Logo from "../ui/Logo";
 
-// import { BsInstagram } from "react-icons/bs";
-import { FaBeer } from "react-icons/fa";
+import { BiLogoInstagramAlt } from "react-icons/bi";
 import facebook from "../../assets/icons/social/facebook.svg";
 import linkedin from "../../assets/icons/social/in.svg";
 import twitter from "../../assets/icons/social/x.svg";
@@ -103,8 +102,12 @@ function Social() {
       <a href="">
         <img src={twitter} alt="" />
       </a>
-      <a href="">
-        <FaBeer />
+      <a href="https://www.instagram.com/ozgurdesignltd/" target="_blank">
+        <div className="bg-[#3D445C] rounded-full w-10 h-10 flex items-center justify-center">
+          <BiLogoInstagramAlt
+            className={"text-3xl fill-white bg-[#3D445C]  "}
+          />
+        </div>
       </a>
     </div>
   );
