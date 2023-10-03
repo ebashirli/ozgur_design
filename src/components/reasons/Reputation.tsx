@@ -3,33 +3,39 @@ import icon2 from "../../assets/icons/reasons/Vector-1.png";
 import icon3 from "../../assets/icons/reasons/Vector-2.png";
 import Card from "../ui/Card";
 
-function Reputation() {
-  const items = [
-    {
-      icon: icon1,
-      heading: "Best Services",
-      texts: ["Nullam senectus porttitor in eget. Eget rutrum leo interdum."],
-    },
-    {
-      icon: icon2,
-      heading: "Best Teams",
-      texts: ["Cursus semper tellus volutpat aliquet lacus."],
-    },
-    {
-      icon: icon3,
-      headings: "Best Designs",
-      texts: ["Ultricies at ipsum nunc, tristique nam lectus."],
-    },
-  ];
+const items = [
+  {
+    id: 1,
+    icon: icon1,
+    heading: "Best Services",
+    texts: ["Nullam senectus porttitor in eget. Eget rutrum leo interdum."],
+  },
+  {
+    id: 2,
+    icon: icon2,
+    heading: "Best Teams",
+    texts: ["Cursus semper tellus volutpat aliquet lacus."],
+  },
+  {
+    id: 3,
+    icon: icon3,
+    headings: "Best Designs",
+    texts: ["Ultricies at ipsum nunc, tristique nam lectus."],
+  },
+];
 
-  const className = "border p-5 space-y-4 w-[65%] h-[100%] justify-self-center";
+function Reputation() {
+  const className =
+    "border border-neutral-100 p-5 space-y-4 lg:w-[65%] justify-self-center rounded min-h-[197px]";
 
   return (
-    <div className="py-14 pb-20">
-      <h3 className=" text-center font-bold py-10 text-2xl">Our Reputation</h3>
-      <ul className="grid grid-cols-3 w-9/12 m-auto ">
+    <div className="px-[14.6%] py-[60px] grid">
+      <h3 className=" text-center font-bold pb-10 text-4xl text-neutral-800 mb-2.5">
+        Our Reputation
+      </h3>
+      <ul className="grid sm:flex gap-5 md:gap-[5vw] mb-6">
         {items.map((item) => (
-          <Card item={item} className={className} />
+          <Card key={item.id} item={item} className={className} />
         ))}
       </ul>
     </div>

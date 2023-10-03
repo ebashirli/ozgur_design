@@ -5,7 +5,11 @@ function Card({ item, className }) {
       {icon && <img src={icon} alt="" />}
       <h4 className="font-bold">{heading}</h4>
       {texts?.length &&
-        texts.map((text) => <p className="mb-5 text-lg">{text}</p>)}
+        texts.map((text) => (
+          <p key={text} className="mb-5 text-lg">
+            {text}
+          </p>
+        ))}
       {button}
     </div>
   );

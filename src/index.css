@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  font-family: "Work Sans", "Arial Narrow", Arial, sans-serif;
+}
 
 textarea,
 input {

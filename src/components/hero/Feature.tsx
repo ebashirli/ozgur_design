@@ -1,26 +1,13 @@
-import Button from "../ui/Button";
-import lArrow from "../../assets/icons/arrow-left.svg";
-import rArrow from "../../assets/icons/arrow-right.svg";
+import BackNextButtons from "../ui/BackNextButtons";
 
 function Feature() {
-  const btnClassName =
-    "flex items-center justify-center gap-4 grow bg-neutral-800 text-white py-1.5 ";
   return (
-    <div className="absolute bottom-0 right-0 text-white bg-primary h-28 flex flex-col justify-between items-center w-max">
-      <h4 className=" text-2xl font-bold">Feature Projects</h4>
-      <p className=" px-11 text-xl">The National University of Architecture</p>
-      <div className="flex justify-between self-stretch">
-        <div className="flex grow gap-[1px] bg-white">
-          <Button className={btnClassName}>
-            <img src={lArrow} alt="" /> Back
-          </Button>
-
-          <Button className={btnClassName}>
-            Next
-            <img src={rArrow} alt="" />
-          </Button>
-        </div>
+    <div className="lg:absolute bottom-0 right-0 text-white bg-primary lg:w-[28.8889%] flex flex-col justify-between items-center">
+      <div className="py-5 px-2.5 flex gap-5 flex-col text-center">
+        <h4 className=" font-[700] text-xl">Feature Projects</h4>
+        <p className="text-2xl mb">The National University of Architecture</p>
       </div>
+      <BackNextButtons className="w-full flex">{null}</BackNextButtons>
     </div>
   );
 }
