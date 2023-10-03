@@ -1,13 +1,12 @@
-import Card from "../ui/Card";
-
 import icon0 from "../../assets/icons/services/icon.png";
 import icon1 from "../../assets/icons/services/icon-1.png";
 import icon2 from "../../assets/icons/services/icon-2.png";
 import icon3 from "../../assets/icons/services/icon-3.png";
 import icon4 from "../../assets/icons/services/icon-4.png";
 import icon5 from "../../assets/icons/services/icon-5.png";
+import Card, { CardType } from "../ui/Card";
 
-const items = [
+const items: CardType[] = [
   {
     id: 1,
     icon: icon0,
@@ -40,7 +39,7 @@ const items = [
   },
 ];
 
-function Services() {
+export function Services() {
   return (
     <div className="bg-neutral-50 md:px-56 pt-9 pb-20">
       <h3 className=" text-center font-bold pb-10 text-4xl text-neutral-800 mb-2.5">

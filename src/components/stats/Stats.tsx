@@ -2,10 +2,10 @@ import icon1 from "../../assets/icons/stats/illus.png";
 import icon2 from "../../assets/icons/stats/illus-1.png";
 import icon3 from "../../assets/icons/stats/illus-2.png";
 import icon4 from "../../assets/icons/stats/illus-3.png";
-import Card from "../ui/Card";
+import Card, { CardType } from "../ui/Card";
 import Button from "../ui/Button";
 
-const cards = [
+const cards: CardType[] = [
   {
     heading: "84",
     texts: ["Happy Clients"],

@@ -1,9 +1,20 @@
 import BackNextButtons from "../ui/BackNextButtons";
 import Navigation from "../ui/NavigationCircles";
-import Slideshow from "../ui/Slideshow ";
-import Project from "./Project";
 
-const projects = [
+interface ProjectType {
+  id: number;
+  title: string;
+  address: string;
+  img: string;
+  category: string;
+}
+
+interface FilterType {
+  name: string;
+  isActive?: boolean;
+}
+
+const projects: ProjectType[] = [
   {
     id: 1,
     title: "Wildstone Infra Hotel",
@@ -34,7 +45,7 @@ const projects = [
   },
 ];
 
-const filters = [
+const filters: FilterType[] = [
   { name: "All", isActive: true },
   { name: "Commercial" },
   { name: "Residential" },
@@ -68,7 +79,7 @@ function Projects() {
 
 export default Projects;
 
-function FilterItem({ item }) {
+function FilterItem({ item }: { item: FilterType }) {
   const active = "text-primary lg:border-b-0 border-b-4 lg:border-l-4  ";
   const passive = "text-neutral-200";
   return (
@@ -79,5 +90,18 @@ function FilterItem({ item }) {
     >
       {item.name}
     </p>
+  );
+}
+
+function Project({ project }: { project: ProjectType }) {
+  const { img, title, address } = project;
+  return (
+    <div className="max-w-fit">
+      <img src={img} alt="" />
+      <div className="bg-primary text-white p-3 grid gap-3">
+        <h5>{title}</h5>
+        <p>{address}</p>
+      </div>
+    </div>
   );
 }

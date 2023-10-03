@@ -1,9 +1,9 @@
 import icon1 from "../../assets/icons/reasons/Vector.png";
 import icon2 from "../../assets/icons/reasons/Vector-1.png";
 import icon3 from "../../assets/icons/reasons/Vector-2.png";
-import Card from "../ui/Card";
+import Card, { CardType } from "../ui/Card";
 
-const items = [
+const items: CardType[] = [
   {
     id: 1,
     icon: icon1,
@@ -19,7 +19,7 @@ const items = [
   {
     id: 3,
     icon: icon3,
-    headings: "Best Designs",
+    heading: "Best Designs",
     texts: ["Ultricies at ipsum nunc, tristique nam lectus."],
   },
 ];

@@ -7,7 +7,7 @@ function Feature() {
         <h4 className=" font-[700] text-xl">Feature Projects</h4>
         <p className="text-2xl mb">The National University of Architecture</p>
       </div>
-      <BackNextButtons className="w-full flex">{null}</BackNextButtons>
+      <BackNextButtons className="w-full flex" />
     </div>
   );
 }

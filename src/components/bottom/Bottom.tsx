@@ -6,7 +6,13 @@ import linkedin from "../../assets/icons/social/in.svg";
 import twitter from "../../assets/icons/social/x.svg";
 // import instagram from "../../assets/icons/social/instagram.svg";
 
-const contactsInfos = [
+interface ContactsInfo {
+  title?: string;
+  content: JSX.Element;
+  css?: string;
+}
+
+const contactsInfos: ContactsInfo[] = [
   {
     title: "Address:",
     content: <address>{"6391 Elgin St. Celina, Delaware 10299"}</address>,
@@ -30,7 +36,6 @@ const contactsInfos = [
     css: "grid gap-5 col-start-2 row-start-4 row-span-2",
   },
   {
-    title: null,
     content: <Logo />,
     css: "grid gap-5 col-start-1 row-start-5",
   },
@@ -48,7 +53,7 @@ function Bottom() {
 
 export default Bottom;
 
-function ContactDetail({ item }) {
+function ContactDetail({ item }: { item: ContactsInfo }) {
   return (
     <div className={item.css || "grid grid-cols-[1fr_10fr] "}>
       {item.title ? <ContactLabel title={item.title} /> : null}
@@ -57,7 +62,7 @@ function ContactDetail({ item }) {
   );
 }
 
-function ContactLabel({ title }) {
+function ContactLabel({ title }: { title?: string }) {
   const labelStyle = { fontVariant: "all-small-caps" };
 
   return (
