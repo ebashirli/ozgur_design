@@ -105,7 +105,7 @@ function Social() {
       <a href="https://www.instagram.com/ozgurdesignltd/" target="_blank">
         <div className="bg-[#3D445C] rounded-full w-10 h-10 flex items-center justify-center">
           <BiLogoInstagramAlt
-            className={"text-3xl fill-white bg-[#3D445C]  "}
+            className={"text-[28px] fill-white bg-[#3D445C]  "}
           />
         </div>
       </a>
