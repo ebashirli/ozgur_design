@@ -4,7 +4,7 @@ import Cta from "./components/cta/Cta";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import Projects from "./components/projects/Projects";
-import Reputation from "./components/reasons/Reputation";
+// import Reputation from "./components/reasons/Reputation";
 import Services from "./components/services/Services";
 // import Stats from "./components/stats/Stats";
 import Footer from "./components/footer/Footer";
@@ -15,7 +15,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Reputation />
+      {/* <Reputation /> */}
       <About />
       <Services />
       {/* <Stats /> */}
