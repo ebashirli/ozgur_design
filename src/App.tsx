@@ -15,7 +15,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Reputation />
+      {/* <Reputation /> */}
       <About />
       <Services />
       {/* <Stats /> */}
