@@ -13,37 +13,55 @@ interface ContactsInfo {
 }
 
 const contactsInfos: ContactsInfo[] = [
+  // {
+  //   content: <Logo />,
+  //   css: "grid gap-5 col-start-1 row-start-5",
+  // },
   {
-    title: "Address:",
-    content: <address>{"6391 Elgin St. Celina, Delaware 10299"}</address>,
+    title: "Ünvan:",
+    content: (
+      <address>
+        {
+          "Bakı şəh., Ələddin Quliyev küç., 1131, Babək plaza, A bloku, 13-cü mərtəbə"
+        }
+      </address>
+    ),
   },
+  // {
+  //   title: ":",
+  //   content: <Subscribe />,
+  //   css: "grid gap-5 row-span-2",
+  // },
   {
-    title: "Newsletter:",
-    content: <Subscribe />,
-    css: "grid gap-5 row-span-2",
-  },
-  {
-    title: "Phone:",
-    content: <a href="tel:+994552070308">(+994) 55 207 03 08</a>,
+    title: "Telefon:",
+    content: (
+      <div className="ml-5">
+        <div>
+          <a href="tel:+994557296086">+994 55 729 60 86</a>
+        </div>
+        <div>
+          <a href="tel:+994552070308">+994 55 207 03 08</a>
+        </div>
+      </div>
+    ),
   },
   {
     title: "Email:",
-    content: <a href="mailto: hello@ozgurdesign.az">hello@ozgurdesign.az</a>,
+    content: <a href="mailto: info@ozgurdesign.az">info@ozgurdesign.az</a>,
   },
   {
-    title: "Social:",
+    title: "",
     content: <Social />,
     css: "grid gap-5 col-start-2 row-start-4 row-span-2",
-  },
-  {
-    content: <Logo />,
-    css: "grid gap-5 col-start-1 row-start-5",
   },
 ];
 
 function Bottom() {
   return (
-    <div className="px-[7.778%]  py-[6.112%] grid grid-cols-[2fr_1fr] ">
+    <div
+      id="contacts"
+      className="px-[7.778%]  py-[6.112%] grid grid-cols-[2fr_1fr] "
+    >
       {contactsInfos.map((item) => (
         <ContactDetail item={item} />
       ))}
@@ -97,16 +115,16 @@ function Subscribe() {
 
 function Social() {
   return (
-    <div className="flex gap-5">
-      <a href="">
+    <div className="flex gap-5  ">
+      {/* <a href="">
         <img src={facebook} alt="" />
-      </a>
-      <a href="">
+      </a> */}
+      <a href="https://www.linkedin.com/company/ozgur-design/" target="_blank">
         <img src={linkedin} alt="" />
       </a>
-      <a href="">
+      {/* <a href="">
         <img src={twitter} alt="" />
-      </a>
+      </a> */}
       <a href="https://www.instagram.com/ozgurdesignltd/" target="_blank">
         <div className="bg-[#3D445C] rounded-full w-10 h-10 flex items-center justify-center">
           <BiLogoInstagramAlt

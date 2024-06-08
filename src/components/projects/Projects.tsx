@@ -19,43 +19,43 @@ const projects: ProjectType[] = [
     id: 1,
     title: "Wildstone Infra Hotel",
     address: "2715 Ash Dr. San Jose, South Dakota",
-    img: "/projects-imgs/1.png",
+    img: "/projects-imgs/eng-solutions/1.webp",
     category: "",
   },
   {
     id: 2,
     title: "Wish Stone Building",
     address: "2972 Westheimer Rd. Santa Ana, Illinois ",
-    img: "/projects-imgs/2.png",
+    img: "/projects-imgs/eng-solutions/2.webp",
     category: "",
   },
   {
     id: 3,
     title: "Mr. Parkinston’s House",
     address: "3517 W. Gray St. Utica, Pennsylvania",
-    img: "/projects-imgs/3.png",
+    img: "/projects-imgs/eng-solutions/3.webp",
     category: "",
   },
   {
     id: 4,
     title: "Oregano Height",
     address: "2464 Royal Ln. Mesa, New Jersey New Jersey ",
-    img: "/projects-imgs/4.png",
+    img: "/projects-imgs/eng-solutions/4.webp",
     category: "",
   },
 ];
 
 const filters: FilterType[] = [
-  { name: "All", isActive: true },
-  { name: "Commercial" },
-  { name: "Residential" },
-  { name: "Other" },
+  { name: "Mühəndislik həlləri", isActive: true },
+  { name: "Metal konstrukiya işləri" },
+  { name: "İnteryer və exteryer dizayn" },
+  { name: "Koteclər" },
 ];
 
 function Projects() {
   return (
-    <div className="px-[7.789%] py-[6.112%]">
-      <h3 className="text-4xl font-bold mb-10">Projects</h3>
+    <div id="services" className="px-[7.789%] py-[6.112%]">
+      <h3 className="text-4xl font-bold mb-10">Xidmətlər və layihələr</h3>
       <div className="grid lg:grid-cols-2 mb-[4.114%]">
         <div className="flex gap-5 flex-wrap lg:flex-col">
           {filters.map((filter) => (
@@ -96,12 +96,13 @@ function FilterItem({ item }: { item: FilterType }) {
 function Project({ project }: { project: ProjectType }) {
   const { img, title, address } = project;
   return (
-    <div className="max-w-fit">
-      <img src={img} alt="" />
-      <div className="bg-primary text-white p-3 grid gap-3">
+    <div className="">
+      <div className=""></div>
+      <img src={img} alt="" className="h-full" />
+      {/* <div className="bg-primary text-white p-3 grid gap-3">
         <h5>{title}</h5>
         <p>{address}</p>
-      </div>
+      </div> */}
     </div>
   );
 }

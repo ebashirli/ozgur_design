@@ -15,11 +15,10 @@ function BackNextButtons({
   return (
     <div className={className}>
       <Button className={btnClassName}>
-        <img src={lArrow} alt="" /> Back
+        <img src={lArrow} alt="" />
       </Button>
-      <div>{children}</div>
+      <div></div>
       <Button className={btnClassName}>
-        Next
         <img src={rArrow} alt="" />
       </Button>
     </div>
