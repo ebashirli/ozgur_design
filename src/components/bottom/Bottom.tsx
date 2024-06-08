@@ -58,12 +58,9 @@ const contactsInfos: ContactsInfo[] = [
 
 function Bottom() {
   return (
-    <div
-      id="contacts"
-      className="px-[7.778%]  py-[6.112%] grid grid-cols-[2fr_1fr] "
-    >
+    <div id="contacts" className="px-[7.778%]  py-10 grid grid-cols-[2fr_1fr] ">
       {contactsInfos.map((item) => (
-        <ContactDetail item={item} />
+        <ContactDetail item={item} key={item.title} />
       ))}
     </div>
   );

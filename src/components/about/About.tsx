@@ -4,7 +4,7 @@ function About() {
   return (
     <div
       id="about"
-      className="lg:h-screen px-[7.778%] py-[7.8vh] lg:pb-[21vh] flex flex-col gap-0.25"
+      className="lg:h-screen px-[7.778%] py-[7.8vh] pb-0 lg:pb-[21vh] flex flex-col gap-0.25"
     >
       {/* <div className="relative h-full max-w-fit"> */}
       {/* <img src={about} alt="" className="max-h-full" /> */}

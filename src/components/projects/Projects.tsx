@@ -54,15 +54,17 @@ const filters: FilterType[] = [
 
 function Projects() {
   return (
-    <div id="services" className="px-[7.789%] py-[6.112%]">
-      <h3 className="text-4xl font-bold mb-10">Xidmətlər və layihələr</h3>
-      <div className="grid lg:grid-cols-2 mb-[4.114%]">
+    <div id="services" className="px-[7.789%] py-10 grid grid-cols-2 h-screen ">
+      <div>
+        <h3 className="text-4xl font-bold mb-10">Xidmətlər və layihələr</h3>
         <div className="flex gap-5 flex-wrap lg:flex-col">
           {filters.map((filter) => (
             <FilterItem item={filter} />
           ))}
         </div>
-        <div className="grid md:grid-cols-2 gap-3 justify-self-center ">
+      </div>
+      <div className="w-full ">
+        <div className="grid md:grid-cols-2 gap-3 justify-self-center w-full ">
           {projects.map((p) => (
             <Project project={p} />
           ))}
