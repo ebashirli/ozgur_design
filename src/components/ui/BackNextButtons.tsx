@@ -3,7 +3,6 @@ import lArrow from "../../assets/icons/arrow-left.svg";
 import rArrow from "../../assets/icons/arrow-right.svg";
 
 function BackNextButtons({
-  children,
   className,
 }: {
   children?: JSX.Element;

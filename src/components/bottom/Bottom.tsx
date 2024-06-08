@@ -1,9 +1,9 @@
-import Logo from "../ui/Logo";
+// import Logo from "../ui/Logo";
 
 import { BiLogoInstagramAlt } from "react-icons/bi";
-import facebook from "../../assets/icons/social/facebook.svg";
+// import facebook from "../../assets/icons/social/facebook.svg";
 import linkedin from "../../assets/icons/social/in.svg";
-import twitter from "../../assets/icons/social/x.svg";
+// import twitter from "../../assets/icons/social/x.svg";
 // import instagram from "../../assets/icons/social/instagram.svg";
 
 interface ContactsInfo {
@@ -92,23 +92,23 @@ function ContactLabel({ title }: { title?: string }) {
   );
 }
 
-function Subscribe() {
-  return (
-    <form className="flex gap-2">
-      <input
-        type="email"
-        name="email"
-        className="flex-grow  px-2 py-2.5 placeholder:text-lg placeholder:text-neutral-300 rounded border border-neutral-100"
-        placeholder="Your email here"
-      />
-      <input
-        type="submit"
-        value="Subscribe"
-        className="px-5 py-2.5 bg-secondary rounded text-white text-lg font-semibold "
-      />
-    </form>
-  );
-}
+// function Subscribe() {
+//   return (
+//     <form className="flex gap-2">
+//       <input
+//         type="email"
+//         name="email"
+//         className="flex-grow  px-2 py-2.5 placeholder:text-lg placeholder:text-neutral-300 rounded border border-neutral-100"
+//         placeholder="Your email here"
+//       />
+//       <input
+//         type="submit"
+//         value="Subscribe"
+//         className="px-5 py-2.5 bg-secondary rounded text-white text-lg font-semibold "
+//       />
+//     </form>
+//   );
+// }
 
 function Social() {
   return (

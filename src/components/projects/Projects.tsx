@@ -96,7 +96,7 @@ function FilterItem({ item }: { item: FilterType }) {
 }
 
 function Project({ project }: { project: ProjectType }) {
-  const { img, title, address } = project;
+  const { img } = project;
   return (
     <div className="">
       <div className=""></div>
