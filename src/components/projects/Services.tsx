@@ -52,34 +52,32 @@ const filters: FilterType[] = [
   { name: "Koteclər" },
 ];
 
-function Projects() {
+function Services() {
   return (
-    <div id="services" className="px-[7.789%] py-10 grid grid-cols-2 h-screen ">
-      <div>
-        <h3 className="text-4xl font-bold mb-10">Xidmətlər və layihələr</h3>
-        <div className="flex gap-5 flex-wrap lg:flex-col">
-          {filters.map((filter) => (
-            <FilterItem item={filter} />
-          ))}
-        </div>
+    <div id="services" className="px-[7.789%] py-10 grid md:grid-cols-2 ">
+      <h3 className="text-4xl font-bold mb-10">Xidmətlər və layihələr</h3>
+      <div className="flex gap-5 flex-wrap lg:flex-col mb-8 md:col-start-1">
+        {filters.map((filter) => (
+          <FilterItem key={filter.name} item={filter} />
+        ))}
       </div>
-      <div className="w-full ">
-        <div className="grid md:grid-cols-2 gap-3 justify-self-center w-full ">
+      <div className="w-full grid justify-center ">
+        <div className="grid md:grid-cols-2 gap-3 justify-self-center w-full justify-center ">
           {projects.map((p) => (
             <Project project={p} />
           ))}
-          <div className="hidden md:block col-span-full">
-            <BackNextButtons className="grid grid-cols-3">
-              <Navigation />
-            </BackNextButtons>
-          </div>
+        </div>
+        <div className="hidden md:block col-span-full">
+          <BackNextButtons className="grid grid-cols-3">
+            <Navigation />
+          </BackNextButtons>
         </div>
       </div>
     </div>
   );
 }
 
-export default Projects;
+export default Services;
 
 function FilterItem({ item }: { item: FilterType }) {
   const active = "text-primary lg:border-b-0 border-b-4 lg:border-l-4  ";
@@ -98,8 +96,7 @@ function FilterItem({ item }: { item: FilterType }) {
 function Project({ project }: { project: ProjectType }) {
   const { img } = project;
   return (
-    <div className="">
-      <div className=""></div>
+    <div className="max-w-sm p-6 bg-white rounded-lg shadow ">
       <img src={img} alt="" className="h-full" />
       {/* <div className="bg-primary text-white p-3 grid gap-3">
         <h5>{title}</h5>

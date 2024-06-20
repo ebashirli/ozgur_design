@@ -8,7 +8,7 @@ function About() {
     >
       {/* <div className="relative h-full max-w-fit"> */}
       {/* <img src={about} alt="" className="max-h-full" /> */}
-      <div className=" bg-primary bg-opacity-20 text-white px-10 py-8 grid gap-9 lg:bg-opacity-100 top-0 lg:top-1/2 max-h-full md:w-3/5 lg:right-0  ">
+      <div className=" bg-primary text-white px-10 py-8 grid gap-9 lg:bg-opacity-100 top-0 lg:top-1/2 max-h-full md:w-3/5 lg:right-0  ">
         <h4 className="text-4xl font-[700]">Haqqımızda</h4>
         <p>
           “Özgür Group” fəaliyyətə 2014-cü ildən başlamış və bu müddət ərzində

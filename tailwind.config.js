@@ -19,6 +19,14 @@ export default {
           900: "#14171F",
         },
       },
+      backgroundImage: {
+        "bg-img-1": "url('/img-1.png')",
+        "bg-img-2": "url('/img-2.png')",
+        "feature-bg": "url('/feature-bg.png')",
+        pattern: "url('/pattern.png')",
+        "hero-bg": "url('/hero.png')",
+        "join-bg": "url('/join-bg.png')",
+      },
       // fontFamily: {
       //   sans: ["ui-sans-serif", "system-ui"],
       //   serif: ["ui-serif", "Georgia"],

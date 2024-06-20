@@ -52,13 +52,16 @@ const contactsInfos: ContactsInfo[] = [
   {
     title: "",
     content: <Social />,
-    css: "grid gap-5 col-start-2 row-start-4 row-span-2",
+    css: "grid gap-5 col-start-2  row-span-2",
   },
 ];
 
 function Bottom() {
   return (
-    <div id="contacts" className="px-[7.778%]  py-10 grid grid-cols-[2fr_1fr] ">
+    <div
+      id="contacts"
+      className="px-[7.778%] py-10 flex flex-col md:grid grid-cols-[2fr_1fr] gap-10 "
+    >
       {contactsInfos.map((item) => (
         <ContactDetail item={item} key={item.title} />
       ))}
@@ -70,7 +73,7 @@ export default Bottom;
 
 function ContactDetail({ item }: { item: ContactsInfo }) {
   return (
-    <div className={item.css || "grid grid-cols-[1fr_10fr] "}>
+    <div className={item.css || "grid grid-cols-[1fr_10fr] gap-5"}>
       {item.title ? <ContactLabel title={item.title} /> : null}
       <div>{item.content}</div>
     </div>
