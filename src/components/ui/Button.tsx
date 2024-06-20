@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 interface Props {
   children?: ReactNode;
   className?: string;
-  onClick: any;
+  onClick?: any;
   // any props that come into the component
 }
 
